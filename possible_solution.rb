@@ -8,7 +8,7 @@ puts "Will you need an umbrella today?".center(line_width)
 puts "=" * line_width
 puts
 puts "Where are you?"
-user_location = gets.chomp
+user_location = gets.chomp.gsub(" ","%20")
 # user_location = "Saint Paul"
 puts "Checking the weather at #{user_location}...."
 
